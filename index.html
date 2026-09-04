@@ -1,117 +1,95 @@
 <!DOCTYPE html>
 <html lang="es">
-
+ 
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Simulación de Phishing</title>
-
+ 
+<title>¡PICADO!</title>
+ 
 <style>
-
+ 
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
 }
-
+ 
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(135deg,#0DA9FF,#00A443);
-    color:white;
-    height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    overflow:hidden;
+font-family: Arial, Helvetica, sans-serif;
+background: linear-gradient(135deg,#0DA9FF,#00A443);
+color:white;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
 }
-
+ 
 .container{
-    width:90%;
-    max-width:1200px;
+width:90%;
+max-width:700px;
 }
-
-.phishing-image{
-    width:250px;
-    height:auto;
-    margin-bottom:30px;
-
-    animation:pulse 2s infinite;
+ 
+.icon{
+font-size:100px;
+margin-bottom:10px;
 }
-
+ 
 h1{
-    font-size:72px;
-    font-weight:900;
-    margin-bottom:40px;
-    text-shadow:3px 3px 12px rgba(0,0,0,0.3);
+font-size:64px;
+font-weight:900;
+margin-bottom:15px;
+text-shadow:0 4px 16px rgba(0,0,0,0.3);
 }
-
+ 
 .message{
-    font-size:34px;
-    line-height:1.5;
-    margin-bottom:40px;
+font-size:22px;
+line-height:1.3;
+margin-bottom:25px;
 }
-
+ 
 .variable{
-    font-size:60px;
-    font-weight:bold;
-    color:#FFD700;
-    margin-top:20px;
-    text-shadow:3px 3px 10px rgba(0,0,0,0.3);
+font-size:42px;
+font-weight:900;
+color:#FFD700;
+margin-bottom:20px;
+text-shadow:0 4px 16px rgba(0,0,0,0.3);
 }
-
+ 
 .footer{
-    margin-top:50px;
-    font-size:24px;
-    opacity:0.95;
+font-size:16px;
+opacity:0.9;
 }
-
-@keyframes pulse {
-
-    0%{
-        transform:scale(1);
-    }
-
-    50%{
-        transform:scale(1.10);
-    }
-
-    100%{
-        transform:scale(1);
-    }
-
-}
-
+ 
 </style>
-
+ 
 </head>
-
+ 
 <body>
-
+ 
 <div class="container">
-
-    <img
-        class="phishing-image"
-        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
-        alt="Phishing">
-
-    <h1>🚨 ¡HAS PICADO! 🚨</h1>
-
-    <div class="message">
-        Hemos obtenido tu usuario y contraseña.
-    </div>
-
-    <div class="variable">
-        💸 TE QUEDAS SIN VARIABLE 💸
-    </div>
-
-    <div class="footer">
-        Por suerte esta era únicamente una simulación de concienciación en ciberseguridad.
-    </div>
-
+ 
+<div class="icon">🚨</div>
+ 
+<h1>¡HAS CAIDO!</h1>
+ 
+<div class="message">
+Has escaneado un QR sin comprobar su procedencia.
+<br><br>
+Por suerte esta vez era una simulación.
 </div>
-
+ 
+<div class="variable">
+💸 TE QUEDAS SIN EL VARIABLE 💸
+</div>
+ 
+<div class="footer">
+La próxima vez verifica la URL antes de escanear.
+</div>
+ 
+</div>
+ 
 </body>
-
+ 
 </html>
