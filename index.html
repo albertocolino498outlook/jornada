@@ -1,95 +1,133 @@
 <!DOCTYPE html>
 <html lang="es">
- 
+
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
 <title>¡PICADO!</title>
- 
+
 <style>
- 
+
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
- 
+
 body{
-font-family: Arial, Helvetica, sans-serif;
-background: linear-gradient(135deg,#0DA9FF,#00A443);
-color:white;
-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center;
-text-align:center;
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0DA9FF,#00A443);
+    color:white;
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+    padding:15px;
 }
- 
+
 .container{
-width:90%;
-max-width:700px;
+    width:100%;
+    max-width:750px;
 }
- 
-.icon{
-font-size:100px;
-margin-bottom:10px;
+
+.alarmas{
+    font-size:90px;
+    margin-bottom:10px;
 }
- 
+
 h1{
-font-size:64px;
-font-weight:900;
-margin-bottom:15px;
-text-shadow:0 4px 16px rgba(0,0,0,0.3);
+    font-size:58px;
+    font-weight:900;
+    margin-bottom:20px;
+
+    text-shadow:0 4px 18px rgba(0,0,0,.25);
 }
- 
+
 .message{
-font-size:22px;
-line-height:1.3;
-margin-bottom:25px;
+
+    font-size:28px;
+    line-height:1.3;
+
+    margin-bottom:25px;
+
+    text-shadow:0 2px 10px rgba(0,0,0,.15);
 }
- 
+
 .variable{
-font-size:42px;
-font-weight:900;
-color:#FFD700;
-margin-bottom:20px;
-text-shadow:0 4px 16px rgba(0,0,0,0.3);
+
+    font-size:48px;
+
+    font-weight:900;
+
+    color:#FFD700;
+
+    text-shadow:0 4px 18px rgba(0,0,0,.30);
+
+    margin-bottom:20px;
 }
- 
+
 .footer{
-font-size:16px;
-opacity:0.9;
+    font-size:18px;
+    opacity:.95;
 }
- 
+
+/* MÓVIL */
+
+@media (max-width:600px){
+
+    .alarmas{
+        font-size:75px;
+    }
+
+    h1{
+        font-size:50px;
+    }
+
+    .message{
+        font-size:20px;
+    }
+
+    .variable{
+        font-size:34px;
+    }
+
+    .footer{
+        font-size:15px;
+    }
+
+}
+
 </style>
- 
+
 </head>
- 
+
 <body>
- 
+
 <div class="container">
- 
-<div class="icon">🚨</div>
- 
-<h1>¡HAS CAIDO!</h1>
- 
-<div class="message">
-Has escaneado un QR sin comprobar su procedencia.
-<br><br>
-Por suerte esta vez era una simulación.
+
+    <div class="alarmas">🚨</div>
+
+    <h1>¡PICADO!</h1>
+
+    <div class="message">
+        Hemos obtenido tu usuario y contraseña.
+        <br><br>
+        Has escaneado un código QR sin verificar su procedencia.
+    </div>
+
+    <div class="variable">
+        💸 TE QUEDAS SIN EL VARIABLE 💸
+    </div>
+
+    <div class="footer">
+        Por suerte esta era únicamente una simulación de concienciación en ciberseguridad.
+    </div>
+
 </div>
- 
-<div class="variable">
-💸 TE QUEDAS SIN EL VARIABLE 💸
-</div>
- 
-<div class="footer">
-La próxima vez verifica la URL antes de escanear.
-</div>
- 
-</div>
- 
+
 </body>
- 
+
 </html>
