@@ -1,78 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Simulación de Phishing</title>
+
 <style>
-body {
-margin: 0;
-padding: 0;
-font-family: Arial, Helvetica, sans-serif;
-background: linear-gradient(135deg,#0DA9FF,#00A443);
-color: white;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-text-align: center;
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
- 
-.container {
-width: 90%;
-max-width: 1200px;
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(135deg,#0DA9FF,#00A443);
+    color:white;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    overflow:hidden;
 }
- 
-.icon {
-font-size: 180px;
-line-height: 1;
-margin-bottom: 30px;
+
+.container{
+    width:90%;
+    max-width:1200px;
 }
- 
-h1 {
-font-size: 72px;
-margin: 0 0 40px 0;
-font-weight: 800;
+
+.phishing-image{
+    width:250px;
+    height:auto;
+    margin-bottom:30px;
+
+    animation:pulse 2s infinite;
 }
- 
-.message {
-font-size: 36px;
-line-height: 1.4;
-max-width: 1000px;
-margin: 0 auto 40px auto;
+
+h1{
+    font-size:72px;
+    font-weight:900;
+    margin-bottom:40px;
+    text-shadow:3px 3px 12px rgba(0,0,0,0.3);
 }
- 
-.variable {
-font-size: 54px;
-font-weight: bold;
-margin-top: 40px;
-color: #FFD700;
-text-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+
+.message{
+    font-size:34px;
+    line-height:1.5;
+    margin-bottom:40px;
 }
- 
-.footer {
-margin-top: 50px;
-font-size: 24px;
-opacity: 0.95;
+
+.variable{
+    font-size:60px;
+    font-weight:bold;
+    color:#FFD700;
+    margin-top:20px;
+    text-shadow:3px 3px 10px rgba(0,0,0,0.3);
 }
+
+.footer{
+    margin-top:50px;
+    font-size:24px;
+    opacity:0.95;
+}
+
+@keyframes pulse {
+
+    0%{
+        transform:scale(1);
+    }
+
+    50%{
+        transform:scale(1.10);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
 </style>
- 
+
+</head>
+
 <body>
- 
+
 <div class="container">
- 
-<div class="icon">🎣</div>
- 
-<h1>🚨 ¡HAS CAÍDO EN EL PHISHING! 🚨</h1>
- 
-<p class="message">
-Hemos obtenido tu usuario y contraseña del banco.
-<br><br>
-Has escaneado un código QR sin verificar su procedencia.
-</p>
- 
-<div class="variable">
-💸 TE QUEDAS SIN EL VARIABLE 💸
+
+    <img
+        class="phishing-image"
+        src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png"
+        alt="Phishing">
+
+    <h1>🚨 ¡HAS CAÍDO EN EL PHISHING! 🚨</h1>
+
+    <div class="message">
+        Hemos obtenido tu usuario y contraseña ar su procedencia.
+    </div>
+
+    <div class="variable">
+        💸 TE QUEDAS SIN EL VARIABLE 💸
+    </div>
+
+    <div class="footer">
+        Por suerte esta era únicamente una simulación de concienciación en ciberseguridad.
+    </div>
+
 </div>
- 
-<div class="footer">
-Por suerte esto era únicamente una simulación de concienciación en ciberseguridad.
-</div>
- 
-</div>
- 
+
 </body>
+
+</html>
